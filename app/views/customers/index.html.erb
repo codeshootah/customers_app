@@ -8,6 +8,8 @@
     <h3><%= customer.name %></h3>
     <p><%= customer.phone %></p>
     <p><%= customer.description %></p>
+
+    <%= link_to 'Push to Black List', customer_path(customer), method: :delete %>
   <% end %>
 
 <% end %>
