@@ -8,6 +8,8 @@
     <h3><%= customer.name %></h3>
     <p><%= customer.phone %></p>
     <p><%= customer.description %></p>
+
+    <%= link_to 'Enable', enable_customer_path(customer), method: :put %>
   <% end %>
 
 <% end %>

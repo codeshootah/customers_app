@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-  before_action :find_customer, only: [:destroy, :edit, :update]
+  before_action :find_customer, only: [:destroy, :edit, :update, :enable]
 
   def index
     @customers = Customer.all
@@ -12,6 +12,11 @@ class CustomersController < ApplicationController
   def destroy
     @customer.update(black_list: true)
     redirect_to root_path
+  end
+
+  def enable
+    @customer.update(black_list: false)
+    redirect_to black_list_path
   end
 
   def edit
