@@ -6,12 +6,13 @@
 <% @customers.each do |customer| %>
   
   <% if customer.black_list %>
-    <h3 class="mt-5"><%= customer.name %></h3>
-    <p><%= customer.phone %></p>
-    <p><%= customer.description %></p>
+    <div class="my-5">
+      <h3><%= customer.name %></h3>
+      <p><%= customer.phone %></p>
+      <p><%= customer.description %></p>
 
-    <%= link_to 'Enable', enable_customer_path(customer), method: :put, class: "btn btn-outline-primary" %>
-    <hr>
+      <%= link_to 'Enable', enable_customer_path(customer), method: :put, class: "btn btn-outline-primary" %>
+    </div>
   <% end %>
 
 <% end %>
