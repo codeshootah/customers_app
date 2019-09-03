@@ -1,15 +1,17 @@
 <h2>Black List</h2>
 
-<%= link_to 'Home', root_path %>
+<%= link_to 'Home', root_path, class: "btn btn-primary" %>
+<hr>
 
 <% @customers.each do |customer| %>
   
   <% if customer.black_list %>
-    <h3><%= customer.name %></h3>
+    <h3 class="mt-5"><%= customer.name %></h3>
     <p><%= customer.phone %></p>
     <p><%= customer.description %></p>
 
-    <%= link_to 'Enable', enable_customer_path(customer), method: :put %>
+    <%= link_to 'Enable', enable_customer_path(customer), method: :put, class: "btn btn-outline-primary" %>
+    <hr>
   <% end %>
 
 <% end %>
