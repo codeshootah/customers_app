@@ -12,8 +12,8 @@ Customer.create(name: 'Schlitz', phone: '+1 234 567 89 00', description: 'Tilde 
 
 Customer.create(name: 'Celiac', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: false)
 
-Customer.create(name: 'Beard', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: false)
+Customer.create(name: 'Beard', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: true)
 
-Customer.create(name: 'Chambray', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: false)
+Customer.create(name: 'Chambray', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: true)
 
 Customer.create(name: 'Pork', phone: '+1 234 567 89 00', description: 'Tilde drinking vinegar selvage enamel pin, wolf tbh man bun vape.', black_list: false)

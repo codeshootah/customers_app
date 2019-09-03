@@ -4,5 +4,6 @@ class CustomersController < ApplicationController
   end
 
   def black_list
+    @customers = Customer.all
   end
 end
