@@ -4,8 +4,10 @@
 
 <% @customers.each do |customer| %>
 
+  <% if !customer.black_list %>
     <h3><%= customer.name %></h3>
     <p><%= customer.phone %></p>
     <p><%= customer.description %></p>
+  <% end %>
 
 <% end %>

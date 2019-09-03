@@ -1,13 +1,13 @@
 <h2>Black List</h2>
 
+<%= link_to 'Home', root_path %>
+
 <% @customers.each do |customer| %>
   
-  <% if customer.black_list == true %>
+  <% if customer.black_list %>
     <h3><%= customer.name %></h3>
     <p><%= customer.phone %></p>
     <p><%= customer.description %></p>
   <% end %>
 
 <% end %>
-
-<%= link_to 'Home', root_path %>
