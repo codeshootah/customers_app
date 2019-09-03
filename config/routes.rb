@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get '/customers/black_list', to: 'customers#black_list', as: 'black_list'
 
-  resources :customers, only: [:destroy]
+  resources :customers
 end
